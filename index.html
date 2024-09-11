@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Marouane Stob</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#contact">Mes contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Marouane Stob</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Mes contacts</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Photo de profil Marouane Stob" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour, je suis</p>
+        <h1 class="title">Marouane Stob</h1>
+        <p class="section__text__p2">Apprenti Développeur Full Stack</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV Marouane.pdf')"
+          >
+            Télécharger Mon CV.
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Mes contacts
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/marouane-stob-warndead/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">En apprendre plus</p>
+      <h1 class="title">A propos de moi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Photo de profile"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Icon expérience"
+                class="icon"
+              />
+              <h3>Mes expérience</h3>
+              <p>Plein de petits projets et bout de code</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>BTS SIO - DORANCO ( en cours )<br />BAC Scientique - LES IRIS</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Depuis tout petit j’ai une passion pour l’informatique, les nouvelles technologies et leurs prouesses qui ont radicalement changer notre mode de vie au quotidien. L’ingéniosité des ces personnalités scientifiques qui nous ont amenés jusqu’ici. C’est pour ces raisons que j’aimerais transformer ma soif d’apprendre en des connaissances plus approfondies et les appliquer dans le monde réelle. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explorez mes</p>
+      <h1 class="title">Compétences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Full Stack Développement</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Bonnes notions</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Quelques notions</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Notions basiques</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Notions basiques</p>
+                </div>
+              </article>             
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Autre Compétences</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>Administrateur Systèmes et réseaux</h3>
+                  <p>Je suis actuellement une formation</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Développeur Java</h3>
+                  <p>Je suis aussi une formation java</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>*Chaque jour, je prends plaisir à écrire des lignes de code, pour continuer je dois absolument trouver une entreprise pour continuer paisiblement mon BTS.</p>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Entrer en contact</p>
+      <h1 class="title">me contacter</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:marouanestob298@gmail.com">marouanestob298@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/marouane-stob-warndead/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">A propos</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#contact">Mes contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Marouane Stob. Tout droit réservés. A très bientôt.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
