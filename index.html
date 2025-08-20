@@ -1,141 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Marouane Stob</div>
-      <div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Marouane Stob</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">A propos</a></li>
+        <li><a href="#contact">Mes contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Marouane Stob</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Compétences</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Mes contacts</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Photo de profil Marouane Stob" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Bonjour, je suis</p>
+      <h1 class="title">Marouane Stob</h1>
+      <p class="section__text__p2">Apprenti Développeur Full Stack <br> Technicien informatique </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="location.href='./#contact'">
+          Mes contacts
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/marouane-stob-warndead/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">En apprendre plus</p>
+    <h1 class="title">A propos de moi</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Photo de profile" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Icon expérience" class="icon" />
+            <h3>Mes expérience</h3>
+            <p>Assistant Technicien Informatique - Absyde Informatique<br />Assistant Conseiller Numérique - Konexio <br/>Stage Technicien Informatique - EDF </p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>BTS CIEL - Lycée Saintonge (en cours)<br />BAC Scientique - LES IRIS</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Passionné par l'informatique depuis mon plus jeune âge, j’ai développé une forte capacité analytique et une compréhension intuitive des systèmes numériques. J'ai toujours été le technicien de la maison, prêt à résoudre tous les problèmes informatiques. Dès 14 ans, j'ai monté mon premier PC gamer. Autodidacte, j'ai appris l'anglais pour enrichir mes compétences ce qui m'a permis d'explorer plus en profondeur le monde du codage.
+          </p>
+        </div>
+        <a href="./assets/cvmarouane.pdf"><p><b>Télécharger mon CV en cliquant ici pour plus d'informations</b></p></a>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Entrer en contact</p>
+    <h1 class="title">me contacter</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:marouanestob298@gmail.com">marouanestob298@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/marouane-stob-warndead/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">A propos</a></li>
+          <li><a href="#experience">Compétences</a></li>
           <li><a href="#contact">Mes contacts</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Marouane Stob</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">A propos</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Compétences</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Mes contacts</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Photo de profil Marouane Stob" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Bonjour, je suis</p>
-        <h1 class="title">Marouane Stob</h1>
-        <p class="section__text__p2">Apprenti Développeur Full Stack <br> Technicien informatique </p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="location.href='./#contact'">
-            Mes contacts
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/marouane-stob-warndead/'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">En apprendre plus</p>
-      <h1 class="title">A propos de moi</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Photo de profile"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Icon expérience"
-                class="icon"
-              />
-              <h3>Mes expérience</h3>
-              <p>Plein de petits projets et bout de code</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>BTS CIEL - Lycée Saintonge (en cours)<br />BAC Scientique - LES IRIS</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Actuellement en BTS CIEL, depuis tout petit j'ai une passion pour l'informatique et les sciences qui permettent de nouvelles technologies. J'ai toujours été attiré par l'interaction entre l'humain et la machine, pouvoir donner vie à nos idées, résoudre des problèmes et en vivre c'est mon objectif.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Entrer en contact</p>
-      <h1 class="title">me contacter</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:marouanestob298@gmail.com">marouanestob298@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/marouane-stob-warndead/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">A propos</a></li>
-            <li><a href="#experience">Compétences</a></li>
-            <li><a href="#contact">Mes contacts</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Marouane Stob. Tout droit réservés. A très bientôt.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    <p>Marouane Stob. Tout droit réservés. A très bientôt.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
